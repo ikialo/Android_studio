@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="350dp"
+            android:padding="10dp"
+            android:text="STUDENT LOGIN"
+            android:textAllCaps="true"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/logo"/>
+    </LinearLayout>
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+
+           <android.support.design.widget.TextInputLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <EditText
+                   android:id="@+id/email"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:hint="Email"
+
+                   android:inputType="textEmailAddress"
+                   android:maxLines="1"
+                   android:singleLine="true"
+                   android:textColor="@color/colorPrimary" />
+
+           </android.support.design.widget.TextInputLayout>
+
+           <android.support.design.widget.TextInputLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <EditText
+                   android:id="@+id/password"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:focusableInTouchMode="true"
+                   android:hint="Password"
+                   android:imeActionId="@+id/login"
+                   android:imeOptions="actionUnspecified"
+                   android:inputType="textPassword"
+                   android:maxLines="1"
+                   android:singleLine="true"
+                   android:textColor="@color/colorPrimary"
+                   tools:ignore="InvalidImeActionId" />
+
+           </android.support.design.widget.TextInputLayout>
+
+
+           <Button
+               android:id="@+id/sign_in_button"
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:background="#CC800000"
+               android:text="Sign In"
+               android:textColor="@color/white" />
+
+           <!-- Link to Login Screen -->
+
+           <Button
+               android:id="@+id/sign_up_button"
+               style="?android:textAppearanceSmall"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:background="#CC800000"
+               android:text="Sign Up"
+               android:textColor="@color/white"
+               android:textStyle="bold" />
+
+           <!-- Link to Forget Password -->
+
+           <TextView
+               android:id="@+id/forget_password_button"
+               style="?android:textAppearanceSmall"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:gravity="center"
+               android:padding="10dp"
+               android:text="Forget Password"
+               android:textColor="@color/colorPrimary"
+               android:textStyle="bold" />
+       </LinearLayout>
+   </ScrollView>
+
+</LinearLayout>
+
+
+
+
